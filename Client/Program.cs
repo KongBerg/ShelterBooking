@@ -24,13 +24,8 @@ namespace ShelterBooking
 
             Console.WriteLine("------Get All Shelter------");
             var result = persistency.GetAll();
-            foreach (var item in result)
-            {
-                Console.WriteLine(item.ToString());
-            }
-
+            
             Console.ReadKey();
         }
     }
-
 }

@@ -23,6 +23,9 @@ namespace ShelterBooking
             collection = database.GetCollection<BsonDocument>("shelter_minus"); //vælger Collection
         }
 
-
+        internal object GetAll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
