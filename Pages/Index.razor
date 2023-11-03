@@ -1,0 +1,31 @@
+﻿@page "/"
+@using ShelterBooking
+@using MongoDB.Driver
+@using System.Threading.Tasks
+
+<PageTitle>BOOKING AF SHELTER</PageTitle>
+
+<h1>Velkommen, opret din booking nu</h1>
+
+<p>Her kan du oprete en booking på en eller flere shelter rundt omrking Aarhus kommune.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Antal Personer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Shelter in ShelterBooking)
+        {
+            <tr>
+                <td>@Shelter.</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+   @code {
+       private List<Shelter>
+   }
